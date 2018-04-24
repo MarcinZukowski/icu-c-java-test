@@ -9,26 +9,26 @@ Then it generates collation keys in Java and in C for input files and collations
 ### Usage
 
 * Run this to make everything
-
-    
-    make
+```
+make
+```
     
     
 * Or, run steps one by one
+```    
+# Fetch and compile ICU4C
+make icu4c
 
-    
-    # Fetch and compile ICU4C
-    make icu4c
-    
-    # Compile C test program
-    make icu4c-test
-    
-    # Compile Java test program
-    make ICU4JTest.class
-    
-    # Run tests - if there are any diffs they will show
-    make test
-    
+# Compile C test program
+make icu4c-test
+
+# Compile Java test program
+make ICU4JTest.class
+
+# Run tests - if there are any diffs they will show
+make test
+```
+
 ### Main variables
 
 * `COLLATIONS` - a set of collations used. Note - collations containing `;` need an extra quote, see below
